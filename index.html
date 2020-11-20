@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="container"></div>
-    <div class="weather-app">
+    <div class="weather-app-wrapper">
+        <div class="weather-app">
+            <div class="overview">
     <h1>
          New York
      </h1>
@@ -23,12 +25,18 @@
      </ul>
      <div class="row">
          <div class="col-6">
+             <div class="clearfix weather-temperature">
              <img
              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
              alt="cloudy"
+             class="float-left"
              />
-             12•C | •F
+             <div class="float-left">
+            <strong>12 </strong> 
+            <small> •C| •F </small>
+            </div>
          </div>
+        </div>
          <div class="col-6">
              <ul>
                  <li>
@@ -43,15 +51,15 @@
              </ul>
          </div>
      </div>
-     <small>
+    </div>
+    </div>
+    <small>
         <a href="https://github.com/jenny631/Vanilla-Project"
         target="blank"
             >Open source code by Jennifer Glancey</a>
-     </small>
-    </div>
+    </small>
 </div>
-    
-
+</div>
 <script src="src/app.js"></script>
 </body>
 </html>
