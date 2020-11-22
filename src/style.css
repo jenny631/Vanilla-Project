@@ -1,9 +1,11 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
-  }
+    background-image: url(../images/Planet-Earth.jpg);
+    background-size: fill;  
+}
   
   h1 {
-    color: black;
+    color: whitesmoke;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -20,11 +22,12 @@ body {
     margin: 0;
     padding: 0;
   
-    color:black;
+    color:white;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
   }
+
   li:first-letter {
     text-transform: capitalize;
   }
@@ -32,13 +35,14 @@ body {
   .weather-app-wrapper {
     max-width: 600px;
     margin: 30px auto;
+    color: white;
   }
   
   .weather-app {
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 5px;
-    background-color: aliceblue;
+    background-color:transparent;
   }
   
   .overview {
@@ -53,18 +57,55 @@ body {
   }
   
   .weather-temperature strong {
-    color: rgb(33, 33, 33);
+    color: white;
     font-size: 40px;
     line-height: 2;
     font-weight: 400;
   }
   
-  .weather-forecast h3 {
-    color: rgb(186, 186, 186);
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    height: 15px;
-    line-height: 15px;
-    padding-top: 7px;
-  }
+  .weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: white;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+}
+
+.weather-forecast h3 {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
