@@ -96,8 +96,8 @@ body {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 48px;
-  width: 48px;
+  height: 30px;
+  width: 30px;
 }
 
 .weather-forecast-temperature {
